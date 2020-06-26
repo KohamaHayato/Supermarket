@@ -25,7 +25,7 @@ class Main {
         sbMain.append("--------------------------\n");
         sbMain.append("番号を入力してください：");
 
-
+        //入力するメソッド
         Scanner sc1 = new Scanner(System.in);
         int cmd, id, num;
         while(true){
