@@ -31,7 +31,7 @@ class Main {
         while(true){
             //メニュー画面出力
             System.out.print(sbMain.toString());
-
+            //例外処理
             try{
                 cmd = sc1.nextInt();
                 switch(cmd){
