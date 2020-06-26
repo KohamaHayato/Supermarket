@@ -12,47 +12,6 @@ public class Shopping {
         cart = new Cart();
     }
 
-  /*
-  //商品番号を複数渡すと、個数1個として金額を合計する関数
-  public int OnePrice(int... productId){
-    int total = 0;
-    for (int i:productId){
-      total += goodsList[i].getPrice();
-    }
-
-    return total;
-  }
-
-  public int  computeTotalPrice(Order... orders){
-    int total = 0;
-    for (Order order : orders){
-      total += order.getTotalAmount();
-    }
-
-    return total;
-  }
-
-  //消費税込みの合計金額の計算
-  public int taxIncludedPrice(Order... orders){
-    int total = 0;
-    for (Order order : orders){
-      total += order.getTotalTaxAmount();
-    }
-    return total;
-  }
-
-  //割引込みで消費税込みの合計金額の計算
-  public int discountTaxIncludedPrice(Order... orders){
-    int total = 0;
-    for (Order order : orders){
-      //Service service = new Service(order);
-      service.allDiscount(order);
-      total += order.getDiscountedTotalTaxAmount();
-    }
-    return total;
-  }
-  */
-
     public int totalPrice(){
         //int total = 0;
         cart.allDiscount();
